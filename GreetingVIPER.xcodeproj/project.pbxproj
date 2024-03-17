@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		ED4116B42BA6E0CD00B4FD25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4116B32BA6E0CD00B4FD25 /* AppDelegate.swift */; };
 		ED4116B62BA6E0CD00B4FD25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4116B52BA6E0CD00B4FD25 /* SceneDelegate.swift */; };
-		ED4116B82BA6E0CD00B4FD25 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4116B72BA6E0CD00B4FD25 /* MainViewController.swift */; };
+		ED4116B82BA6E0CD00B4FD25 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4116B72BA6E0CD00B4FD25 /* GreetingViewController.swift */; };
 		ED4116BD2BA6E0CE00B4FD25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4116BC2BA6E0CE00B4FD25 /* Assets.xcassets */; };
 		ED4116C02BA6E0CE00B4FD25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4116BE2BA6E0CE00B4FD25 /* LaunchScreen.storyboard */; };
 		ED4116C82BA6E54C00B4FD25 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4116C72BA6E54C00B4FD25 /* Person.swift */; };
+		ED8324522BA6EF7300F54E79 /* GreetingPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8324512BA6EF7300F54E79 /* GreetingPresentor.swift */; };
+		ED8324542BA6EF8A00F54E79 /* GreetingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8324532BA6EF8A00F54E79 /* GreetingInteractor.swift */; };
+		ED8324562BA6EFAB00F54E79 /* GreetingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8324552BA6EFAB00F54E79 /* GreetingConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED4116B02BA6E0CD00B4FD25 /* GreetingVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreetingVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4116B32BA6E0CD00B4FD25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4116B52BA6E0CD00B4FD25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED4116B72BA6E0CD00B4FD25 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ED4116B72BA6E0CD00B4FD25 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		ED4116BC2BA6E0CE00B4FD25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4116BF2BA6E0CE00B4FD25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED4116C12BA6E0CE00B4FD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4116C72BA6E54C00B4FD25 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		ED8324512BA6EF7300F54E79 /* GreetingPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresentor.swift; sourceTree = "<group>"; };
+		ED8324532BA6EF8A00F54E79 /* GreetingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingInteractor.swift; sourceTree = "<group>"; };
+		ED8324552BA6EFAB00F54E79 /* GreetingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		ED4116B22BA6E0CD00B4FD25 /* GreetingVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				ED4116B32BA6E0CD00B4FD25 /* AppDelegate.swift */,
-				ED4116B52BA6E0CD00B4FD25 /* SceneDelegate.swift */,
-				ED4116B72BA6E0CD00B4FD25 /* MainViewController.swift */,
-				ED4116C72BA6E54C00B4FD25 /* Person.swift */,
-				ED4116BC2BA6E0CE00B4FD25 /* Assets.xcassets */,
-				ED4116BE2BA6E0CE00B4FD25 /* LaunchScreen.storyboard */,
-				ED4116C12BA6E0CE00B4FD25 /* Info.plist */,
+				ED4116CA2BA6EA1100B4FD25 /* Application */,
+				ED4116C92BA6E9A800B4FD25 /* Greeting */,
+				ED8324572BA7143F00F54E79 /* Models */,
+				ED8324582BA7145200F54E79 /* Resources */,
+				ED8324592BA7146100F54E79 /* Storuboards */,
 			);
 			path = GreetingVIPER;
+			sourceTree = "<group>";
+		};
+		ED4116C92BA6E9A800B4FD25 /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				ED4116B72BA6E0CD00B4FD25 /* GreetingViewController.swift */,
+				ED8324512BA6EF7300F54E79 /* GreetingPresentor.swift */,
+				ED8324532BA6EF8A00F54E79 /* GreetingInteractor.swift */,
+				ED8324552BA6EFAB00F54E79 /* GreetingConfigurator.swift */,
+			);
+			path = Greeting;
+			sourceTree = "<group>";
+		};
+		ED4116CA2BA6EA1100B4FD25 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ED4116B52BA6E0CD00B4FD25 /* SceneDelegate.swift */,
+				ED4116B32BA6E0CD00B4FD25 /* AppDelegate.swift */,
+				ED4116C12BA6E0CE00B4FD25 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		ED8324572BA7143F00F54E79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED4116C72BA6E54C00B4FD25 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED8324582BA7145200F54E79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED4116BC2BA6E0CE00B4FD25 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED8324592BA7146100F54E79 /* Storuboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED4116BE2BA6E0CE00B4FD25 /* LaunchScreen.storyboard */,
+			);
+			path = Storuboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4116B82BA6E0CD00B4FD25 /* MainViewController.swift in Sources */,
+				ED8324522BA6EF7300F54E79 /* GreetingPresentor.swift in Sources */,
+				ED8324542BA6EF8A00F54E79 /* GreetingInteractor.swift in Sources */,
+				ED8324562BA6EFAB00F54E79 /* GreetingConfigurator.swift in Sources */,
+				ED4116B82BA6E0CD00B4FD25 /* GreetingViewController.swift in Sources */,
 				ED4116B42BA6E0CD00B4FD25 /* AppDelegate.swift in Sources */,
 				ED4116C82BA6E54C00B4FD25 /* Person.swift in Sources */,
 				ED4116B62BA6E0CD00B4FD25 /* SceneDelegate.swift in Sources */,
@@ -281,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4D33S9Y62;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GreetingVIPER/Info.plist;
+				INFOPLIST_FILE = GreetingVIPER/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -311,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4D33S9Y62;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GreetingVIPER/Info.plist;
+				INFOPLIST_FILE = GreetingVIPER/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
